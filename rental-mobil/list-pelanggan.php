@@ -43,7 +43,7 @@
                         or alamat_pelanggan like '%$search%'
                         or kontak like '%$search%'";
                     } else {
-                        $sql = "select * from pelanggan";
+                        $sql = "SELECT * FROM 'pelanggan'";
                     }
                     //eksekusi perintah sql
                     $query = mysqli_query($connect, $sql);

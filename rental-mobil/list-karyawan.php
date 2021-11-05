@@ -15,11 +15,11 @@
             </div>
 
             <div class="card-body">
-                <!--kotak pencarian data petugas-->
+                <!--kotak pencarian data karyawan-->
                 <form action="list-karyawan.php" method="get">
                     <input type="text" name="search" 
                     class="form-control mb-2"
-                    placeholder="Masukkan Keyword" required/>
+                    placeholder="Masukkan Keyword Pencarian" required/>
                 </form>
                 <ul class="list-group">
                     <?php
@@ -59,7 +59,7 @@
                                 </button>
                                 </a>
                                 <div class="card-footer">
-                                    <a href="delete2.php?id_karyawan=<?=$karyawan["id_karyawan"]?>"
+                                    <a href="delete-karyawan.php?id_karyawan=<?=$karyawan["id_karyawan"]?>"
                                     onClick="return confirm('Apakah Anda Yakin?')">
                                 </div>
                                 <button class="btn btn-block btn-danger">
